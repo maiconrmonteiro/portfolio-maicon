@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio | Maicon Monteiro</title>
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/all.min.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <noscript><link rel="stylesheet" href="src/css/noscript.css"></noscript>
+</head>
+
+<body class="themeDark">
+    <div id="wrapper">
+        <header id="header">
+            <label class="switch">
+                <input type="checkbox" id="theme">
+                <span class="slider round"></span>
+            </label>
+            <span id="profile"><img src="src/imagens/image-profile-dark.png" alt="profile"></span>
+            <div class="content">
+                <div class="inner preload">
+                    <h1>Oi! Me chamo Maicon</h1>
+                    <p>sou aprendiz em desenvolvimento Front-end</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>Sobre mim</li>
+                    <li>Projetos</li>
+                    <li>Habilidades</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article id="intro" class="hidden">
+                <i class="fa-solid fa-x"></i>
+                <h2 class="major">Sobre mim</h2>
+                <p>Faço cursos em desenvolvimento Front-end, apaixonado por tecnologia, entusiasta da área e decidi seguir tambem o caminho da programação. Buscando sempre meu melhor, estou me dedicando em evoluir nessa área de desenvolvimento Web. Atualmente, trabalho na empresa Floranda Comercio de Flores, formado em Educação Fisica pela Uniasselvi decidi mudar para algo que me sentia mais atraído e no qual me identificava mais. Atualmente estou em busca da minha primeira oportunidade de emprego na área.</p>
+            </article>
+
+            <article id="work" class="hidden">
+                <i class="fa-solid fa-x"></i>
+                <h2 class="major">Projetos</h2>
+                <div id="repositories"></div>
+            </article>
+
+            <article id="ability" class="hidden">
+                <i class="fa-solid fa-x"></i>
+                <h2 class="major">Habilidades</h2>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i><p>html</p></li>
+                    <li><i class="fa-brands fa-css3-alt"></i><p>css</p></li>
+                    <li><i class="fa-brands fa-js"></i><p>javascript</p></li>
+                    <li><i class="fa-brands fa-github"></i><p>github</p></li>
+                    <li><i class="fa-brands fa-git-alt"></i><p>git</p></li>
+                </ul>
+            </article>
+
+            <article id="contact" class="hidden">
+                <i class="fa-solid fa-x"></i>
+                <h2 class="major">Contato</h2>
+                <form method="post" action="https://formspree.io/f/xbjbqgla">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" required/>
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" required/>
+                        </div>
+                        <div class="field">
+                            <label for="message">Messagem</label>
+                            <textarea name="message" id="message" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="primary" /></li>
+                        <li><input type="reset" value="Reset" /></li>
+                    </ul>
+                </form>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/maicon-monteiro-5a5a38138/" target="_blank" class="icon brands"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/maiconrmonteiro" target="_blank" class="icon brands"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+
+            </article>
+        </main>
+    </div>
+
+    <script type="module" src="src/js/index.js"></script>
+</body>
+
+</html>
