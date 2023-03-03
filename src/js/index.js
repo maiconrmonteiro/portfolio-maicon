@@ -64,3 +64,15 @@ function getUserProfile() {
     })
 }
 getUserProfile()
+
+
+//resolvendo esse bug de não fechar ao clicar no icone
+
+var fechando = document.querySelectorAll('.fa-solid');
+
+
+fechando.forEach(function(index){
+    index.addEventListener('click', function(){
+        location.reload()
+    })
+})
