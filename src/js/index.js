@@ -50,7 +50,7 @@ theme.addEventListener("click", () => {
 
 //repositório do GitHub
 async function repos() {
-    const response = await fetch("https://api.github.com/users/maiconrmonteiro/repos?per_page=10")
+    const response = await fetch("https://api.github.com/users/maiconrmonteiro/repos?per_page=12")
     return await response.json()
 }
 
@@ -63,16 +63,17 @@ function getUserProfile() {
         document.querySelector("#repositories").innerHTML += `<ul>${userRepositories}</ul>`
     })
 }
+
 getUserProfile()
 
 
 //resolvendo esse bug de não fechar ao clicar no icone
 
-var fechando = document.querySelectorAll('.fa-solid');
+var close = document.querySelectorAll('.fa-solid');
 
-
-fechando.forEach(function(index){
+close.forEach(function(index){
     index.addEventListener('click', function(){
         location.reload()
-    })
+   })
 })
+
