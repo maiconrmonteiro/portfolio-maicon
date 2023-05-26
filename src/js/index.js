@@ -59,9 +59,13 @@ function getUserProfile() {
         let userRepositories = ""
         reposData.forEach(repo => {
             userRepositories += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`
+            console.log(repo)
         })
         document.querySelector("#repositories").innerHTML += `<ul>${userRepositories}</ul>`
+        
     })
+
+    
 }
 
 getUserProfile()
