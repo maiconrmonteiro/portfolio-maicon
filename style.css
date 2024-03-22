@@ -146,6 +146,10 @@ ul li a:hover{ /*Pseudo- selector*/
   gap: 50px;
 }
 
+.btn-voltar {
+  margin-bottom: 30px;
+}
+
 @keyframes slide-in {
     from {
       left: 0;
