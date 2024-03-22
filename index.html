@@ -1,108 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-br" class="light">
 <head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio | Maicon Monteiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Monteiro</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="src/css/all.min.css">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <noscript><link rel="stylesheet" href="src/css/noscript.css"></noscript>
 </head>
 
-<body class="themeDark">
-    <div id="wrapper">
-        <header id="header">
-            <label class="switch">
-                <input type="checkbox" id="theme">
-                <span class="slider round"></span>
-            </label>
-            <span id="profile"><img src="src/imagens/image-profile-dark.png" alt="profile"></span>
-            <div class="content">
-                <div class="inner preload">
-                    <h1>Oi! Me chamo Maicon</h1>
-                    <p>Junior Front End Developer </p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li>Sobre mim</li>
-                    <li>Projetos</li>
-                    <li>Habilidades</li>
-                    <li>Contato</li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <article id="intro" class="hidden">
-                <i class="fa-solid fa-x"></i>
-                <h2 class="major">Sobre mim</h2>
-                <p>
-                    Faço cursos em desenvolvimento Front-end, apaixonado por tecnologia, entusiasta da área, por isso também decidi seguir o caminho da programação. Buscando sempre meu melhor, estou me dedicando em evoluir nessa área de desenvolvimento Web. Atualmente, trabalho na empresa Floranda Comercio de Flores e faço serviço voluntario na parte de TI da Associação de Bombeiros Comunitário de Biguaçu, sou formado em Educação Física pela Uniasselvi e procuro conhecimento na área de desenvolvimento por me sentir mais atraído.
-                <p>
-            </article>
-
-            <article id="work" class="hidden">
-                <i class="fa-solid fa-x"></i>
-                <h2 class="major">Projetos</h2>
-                <div id="repositories"></div>
-            </article>
-
-            <article id="ability" class="hidden">
-                <i class="fa-solid fa-x"></i>
-                <h2 class="major">Habilidades</h2>
-                <ul>
-                    <li><i class="fa-brands fa-html5"></i><p>html</p></li>
-                    <li><i class="fa-brands fa-css3-alt"></i><p>css</p></li>
-                    <li><i class="fa-brands fa-js"></i><p>javascript</p></li>
-                    <li><i class="fa-brands fa-github"></i><p>github</p></li>
-                    <li><i class="fa-brands fa-git-alt"></i><p>git</p></li>
-                    <li><i class="fa-brands fa-react"></i><p>Aprendendo React</p></li>
-                </ul>
-            </article>
-
-            <article id="contact" class="hidden">
-                <i class="fa-solid fa-x"></i>
-                <h2 class="major">Contato</h2>
-                <form method="post" action="https://formspree.io/f/xbjbqgla">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Nome</label>
-                            <input type="text" name="name" id="name" required/>
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" required/>
-                        </div>
-                        <div class="field">
-                            <label for="message">Messagem</label>
-                            <textarea name="message" id="message" rows="4" required></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Enviar" class="primary" /></li>
-                        <li><input type="reset" value="Limpar" /></li>
-                    </ul>
-                </form>
-                <ul class="icons">
-                    <li><a href="https://www.instagram.com/maiconrmonteiro/" target="_blank" class="icon brands"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/maicon-monteiro-5a5a38138/" target="_blank" class="icon brands"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/maiconrmonteiro" target="_blank" class="icon brands"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://wa.me/5548984360213?text=Oi%20Maicon,%20preciso%20de%20informa%C3%A7%C3%B5es!%20" target="_blank" class="icon brands"><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-
-            </article>
-        </main>
+<body>
+    <div id="container">
+    <div id="profile">
+        <img src="image-profile-dark.png" alt="Foto da eusoudany">
+    <p>@maiconrmonteiro</p>
     </div>
 
-    <script type="module" src="src/js/index.js"></script>
-</body>
+    <div id="switch" onclick="toggleMode()">
+    <button></button>
+    <span></span>
+    </div>
 
+    <ul>
+        <li>
+            <a href="quemsou.html"><ion-icon name=""></ion-icon>
+                Quem Sou</a>
+        </li>
+         <li>
+            <a href="https://wa.me/5548984360213" target="_black"><ion-icon name="logo-whatsapp"></ion-icon>Whats App</a>
+        </li>
+        
+        <li>
+            <a href="https://www.linkedin.com/in/maicon-monteiro-5a5a38138/" target="_black"><ion-icon name="logo-linkedin"></ion-icon>
+                Linkedin</a>
+        </li>
+
+<!--         <li>
+            <a href="https://github.com/eusoudany" target="_black"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+        </li> -->
+
+<!--         <li>
+            <a href="https://www.instagram.com/eusoudany/" target="_black"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
+        </li> -->
+
+<!--         <li>
+            <a href="https://eusoudany.github.io/cv/" target="_black"><ion-icon name="checkbox-outline"></ion-icon>Curriculum</a>
+        </li> -->
+
+<!--         <li>
+            <a href="https://www.instagram.com/eusoudany/" target="_black"><ion-icon name="clipboard-outline"></ion-icon>Portfólio</a>
+        </li> -->
+
+       
+
+       
+    </ul>
+
+ 
+
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="./script.js"></script>
+</body>
 </html>
